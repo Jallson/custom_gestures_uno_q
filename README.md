@@ -7,8 +7,6 @@ Edge Impulse project link: https://studio.edgeimpulse.com/public/1019079/live
 
 Demo Video link: https://youtu.be/rZpem5olRLM
 
-Repo link: https://github.com/Jallson/custom_gestures_uno_q
-
 
 ### Introduction:
 
@@ -96,14 +94,12 @@ After the model has been built, return to the Arduino AppLab, you will find the 
 
 To control the robotic arm using hand gestures, you must ensure that everything is properly connected as shown in the diagram above. Additionally, before creating your Python or Sketch programs, you need to download several Sketch Libraries. Click Add Sketch Library, then search for and download them one by one: Servo 1.3.0, MsgPack 0.4.2, DebugLog 0.8.4, ArxContainer 0.7.0, and ArxTypeTraits 0.3.1 (or their latest updated versions).
 Below is a screenshot of the Python code. It is important to adjust/calibrate the servo angles to match the physical configuration of your specific robotic arm. In this Python code, the logic is as follows: if the "neutral" gesture is detected, the horizontal position is mapped to the pan servo angle, while the size of the bounding box is interpreted as a change in the tilt servo angle. The "opening" and "closing" gestures translate to the movement/angle change of the claw servo. Meanwhile, the Sketch file determines which pins are used; in this case, pins 9, 10, 11. Servos angle standard setup and handles the output display on the LED matrix (a smiley face) whenever a hand gesture is detected.
-All Python and Sketch files can be downloaded from the GitHub link below, then you can click Add File icon on AppLab then mod/adjust for your needs.
+All Python and Sketch files can be downloaded from this repo, then you can click Add File icon on AppLab then mod/adjust for your needs.
 
 ![Add Sketch Library](Images/photo18.png)
 ![Python main code](Images/photo19.png)
 ![Sketch.ino](Images/photo20.png)
 
-Files/codes can be accessed at:
-https://github.com/Jallson/custom_gestures_uno_q
 
 
 ### Conclusion:
